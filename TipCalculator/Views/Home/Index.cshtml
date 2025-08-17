@@ -13,15 +13,15 @@
     </div>
     <div>
         <label>15% tip:</label>
-        <label>@ViewBag.Fifteem.ToString("c2")</label>
+        <label>@(ViewBag.Fifteen != null ? ((double)ViewBag.Fifteen).ToString("C2") : "$0.00")</label>
     </div>
     <div>
         <label>20% tip:</label>
-        <label>@ViewBag.Twenty.ToString("c2")</label>
+        <label>@(ViewBag.Twenty != null ? ((double)ViewBag.Twenty).ToString("C2") : "$0.00")</label>
     </div>
     <div>
         <label>25% tip:</label>
-        <label>@ViewBag.TwentyFive.ToString("c2")</label>
+        <label>@(ViewBag.TwentyFive != null ? ((double)ViewBag.TwentyFive).ToString("C2") : "$0.00")</label>
     </div>
     <div>
         <button type="submit">Calculate</button>
